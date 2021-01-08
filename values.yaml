@@ -11,8 +11,6 @@ elasticsearch-client:
   imageTag: 7.9.3
   replicas: 1
   masterService: "elasticsearch-oss-master"
-  # TODO@kjoshi: Remove this, once this service is running.
-  maxUnavailable: 0
 elasticsearch-master:
   enabled: true
   clusterName: "elasticsearch-oss"
@@ -24,8 +22,6 @@ elasticsearch-master:
     remote_cluster_client: "true"
   image: docker.elastic.co/elasticsearch/elasticsearch-oss
   imageTag: 7.9.3
-  # TODO@kjoshi: Remove this, once this service is running.
-  maxUnavailable: 0
 elasticsearch-data:
   enabled: false
   clusterName: "elasticsearch-oss"
@@ -38,8 +34,6 @@ elasticsearch-data:
   image: docker.elastic.co/elasticsearch/elasticsearch-oss
   imageTag: 7.9.3
   masterService: "elasticsearch-oss-master"
-  # TODO@kjoshi: Remove this, once this service is running.
-  maxUnavailable: 0
 elasticsearch-ingest:
   enabled: false
   clusterName: "elasticsearch-oss"
@@ -52,5 +46,3 @@ elasticsearch-ingest:
   image: docker.elastic.co/elasticsearch/elasticsearch-oss
   imageTag: 7.9.3
   masterService: "elasticsearch-oss-master"
-  # TODO@kjoshi: Remove this, once this service is running.
-  maxUnavailable: 0
