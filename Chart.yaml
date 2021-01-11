@@ -1,7 +1,12 @@
 apiVersion: v2
 name: kommander-elasticsearch
 description: A Helm chart for D2iQ Kommander that installs Elastisearch OSS
-
+sources:
+  - https://github.com/elastic/elasticsearch
+icon: https://helm.elastic.co/icons/elasticsearch.png
+maintainers:
+- email: support@d2iq.com
+  name: Kommander Elastic OSS
 # A chart can be either an 'application' or a 'library' chart.
 #
 # Application charts are a collection of templates that can be packaged into versioned archives
