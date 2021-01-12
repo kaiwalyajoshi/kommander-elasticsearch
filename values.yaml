@@ -12,7 +12,6 @@ elasticsearch-client:
   replicas: 1
   masterService: "elasticsearch-oss-master"
 elasticsearch-master:
-  enabled: true
   clusterName: "elasticsearch-oss"
   nodeGroup: "master"
   roles:
@@ -23,7 +22,6 @@ elasticsearch-master:
   image: docker.elastic.co/elasticsearch/elasticsearch-oss
   imageTag: 7.9.3
 elasticsearch-data:
-  enabled: false
   clusterName: "elasticsearch-oss"
   nodeGroup: "data"
   roles:
@@ -35,7 +33,6 @@ elasticsearch-data:
   imageTag: 7.9.3
   masterService: "elasticsearch-oss-master"
 elasticsearch-ingest:
-  enabled: false
   clusterName: "elasticsearch-oss"
   nodeGroup: "ingest"
   roles:
