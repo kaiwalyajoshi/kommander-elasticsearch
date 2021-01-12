@@ -1,0 +1,37 @@
+apiVersion: v1
+entries:
+  kommander-elasticsearch:
+  - apiVersion: v2
+    appVersion: 7.9.3
+    created: "2021-01-11T19:12:05.399278147-08:00"
+    dependencies:
+    - alias: elasticsearch-client
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.9.3
+    - alias: elasticsearch-master
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.9.3
+    - alias: elasticsearch-data
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.9.3
+    - alias: elasticsearch-ingest
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.9.3
+    description: A Helm chart for D2iQ Kommander that installs Elastisearch OSS
+    digest: 8fabf0dcbb6d1d215ba02b4eb8c5e2403a89224cb310523bdfe1aca35efe7d0f
+    icon: https://helm.elastic.co/icons/elasticsearch.png
+    maintainers:
+    - email: support@d2iq.com
+      name: Kommander Elastic OSS
+    name: kommander-elasticsearch
+    sources:
+    - https://github.com/elastic/elasticsearch
+    type: application
+    urls:
+    - https://kaiwalyajoshi.github.io/kommander-elasticsearch/kommander-elasticsearch-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-01-11T19:12:05.394642436-08:00"
