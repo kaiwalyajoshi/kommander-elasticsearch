@@ -20,6 +20,6 @@
 .idea/
 *.tmproj
 
-kommander-elasticsearch-*
-charts/elasticsearch/examples/
-docs/
+# Remove local artifacts not realted to the chart.
+*LICENSE
+*create_artifacts.sh
