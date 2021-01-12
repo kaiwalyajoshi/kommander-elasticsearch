@@ -1,5 +1,4 @@
 elasticsearch-client:
-  enabled: true
   clusterName: "elasticsearch-oss"
   nodeGroup: "client"
   roles:
