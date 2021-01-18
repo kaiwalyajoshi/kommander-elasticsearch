@@ -7,7 +7,7 @@ elasticsearch-client:
     data: "false"
     remote_cluster_client: "true"
   image: docker.elastic.co/elasticsearch/elasticsearch-oss
-  imageTag: 7.9.3
+  imageTag: 7.10.2
   replicas: 1
   masterService: "elasticsearch-oss-master"
 elasticsearch-master:
@@ -19,7 +19,7 @@ elasticsearch-master:
     data: "false"
     remote_cluster_client: "true"
   image: docker.elastic.co/elasticsearch/elasticsearch-oss
-  imageTag: 7.9.3
+  imageTag: 7.10.2
 elasticsearch-data:
   clusterName: "elasticsearch-oss"
   nodeGroup: "data"
@@ -29,7 +29,7 @@ elasticsearch-data:
     data: "true"
     remote_cluster_client: "true"
   image: docker.elastic.co/elasticsearch/elasticsearch-oss
-  imageTag: 7.9.3
+  imageTag: 7.10.2
   masterService: "elasticsearch-oss-master"
 elasticsearch-ingest:
   clusterName: "elasticsearch-oss"
@@ -40,5 +40,5 @@ elasticsearch-ingest:
     data: "false"
     remote_cluster_client: "true"
   image: docker.elastic.co/elasticsearch/elasticsearch-oss
-  imageTag: 7.9.3
+  imageTag: 7.10.2
   masterService: "elasticsearch-oss-master"
