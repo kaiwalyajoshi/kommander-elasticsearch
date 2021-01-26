@@ -10,6 +10,18 @@ elasticsearch-client:
   imageTag: 7.10.0
   replicas: 1
   masterService: "elasticsearch-oss-master"
+  resources:
+    requests:
+      cpu: "1000m"
+      memory: "2Gi"
+    limits:
+      cpu: "1000m"
+      memory: "2Gi"
+  volumeClaimTemplate:
+    accessModes: [ "ReadWriteOnce" ]
+    resources:
+      requests:
+        storage: 1Gi
 elasticsearch-master:
   clusterName: "elasticsearch-oss"
   nodeGroup: "master"
@@ -20,6 +32,18 @@ elasticsearch-master:
     remote_cluster_client: "true"
   image: docker.elastic.co/elasticsearch/elasticsearch-oss
   imageTag: 7.10.0
+  resources:
+    requests:
+      cpu: "1000m"
+      memory: "2Gi"
+    limits:
+      cpu: "1000m"
+      memory: "2Gi"
+  volumeClaimTemplate:
+    accessModes: [ "ReadWriteOnce" ]
+    resources:
+      requests:
+        storage: 2Gi
 elasticsearch-data:
   clusterName: "elasticsearch-oss"
   nodeGroup: "data"
@@ -31,6 +55,18 @@ elasticsearch-data:
   image: docker.elastic.co/elasticsearch/elasticsearch-oss
   imageTag: 7.10.0
   masterService: "elasticsearch-oss-master"
+  resources:
+    requests:
+      cpu: "1000m"
+      memory: "4Gi"
+    limits:
+      cpu: "1000m"
+      memory: "4Gi"
+  volumeClaimTemplate:
+    accessModes: [ "ReadWriteOnce" ]
+    resources:
+      requests:
+        storage: 10Gi
 elasticsearch-ingest:
   clusterName: "elasticsearch-oss"
   nodeGroup: "ingest"
@@ -42,3 +78,15 @@ elasticsearch-ingest:
   image: docker.elastic.co/elasticsearch/elasticsearch-oss
   imageTag: 7.10.0
   masterService: "elasticsearch-oss-master"
+  resources:
+    requests:
+      cpu: "500m"
+      memory: "2Gi"
+    limits:
+      cpu: "1000m"
+      memory: "2Gi"
+  volumeClaimTemplate:
+    accessModes: [ "ReadWriteOnce" ]
+    resources:
+      requests:
+        storage: 2Gi
