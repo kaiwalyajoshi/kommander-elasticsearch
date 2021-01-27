@@ -90,3 +90,17 @@ elasticsearch-ingest:
     resources:
       requests:
         storage: 2Gi
+prometheus-exporter:
+  #nameOverride: ""
+  #fullnameOverride: ""
+  es:
+    uri: http://elasticsearch-oss-client:9200
+  service:
+    labels:
+      servicemonitor.kubeaddons.mesosphere.io/path: "metrics"
+    metricsPort:
+      name: metrics
+  replicaCount: 1
+  image:
+    repository: justwatch/elasticsearch_exporter
+    tag: 1.1.0
