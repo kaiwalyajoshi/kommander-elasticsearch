@@ -3,7 +3,7 @@ entries:
   kommander-elasticsearch:
   - apiVersion: v2
     appVersion: 7.10.0
-    created: "2021-01-26T23:27:35.207398605-08:00"
+    created: "2021-01-27T18:33:53.671620544-08:00"
     dependencies:
     - alias: elasticsearch-client
       name: elasticsearch
@@ -40,7 +40,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 7.10.0
-    created: "2021-01-26T23:27:35.202909166-08:00"
+    created: "2021-01-27T18:33:53.66752557-08:00"
     dependencies:
     - alias: elasticsearch-client
       name: elasticsearch
@@ -73,7 +73,7 @@ entries:
     version: 0.2.1
   - apiVersion: v2
     appVersion: 7.10.0
-    created: "2021-01-26T23:27:35.197162987-08:00"
+    created: "2021-01-27T18:33:53.663173698-08:00"
     dependencies:
     - alias: elasticsearch-client
       name: elasticsearch
@@ -106,7 +106,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: 7.9.3
-    created: "2021-01-26T23:27:35.191525901-08:00"
+    created: "2021-01-27T18:33:53.659475415-08:00"
     dependencies:
     - alias: elasticsearch-client
       name: elasticsearch
@@ -137,4 +137,26 @@ entries:
     urls:
     - https://kaiwalyajoshi.github.io/kommander-elasticsearch/kommander-elasticsearch-0.1.0.tgz
     version: 0.1.0
-generated: "2021-01-26T23:27:35.187220534-08:00"
+  kommander-kibana:
+  - apiVersion: v2
+    appVersion: 7.10.0
+    created: "2021-01-27T18:33:53.672917561-08:00"
+    dependencies:
+    - alias: kibana
+      name: kibana
+      repository: https://helm.elastic.co
+      version: 7.10.0
+    description: A Helm chart for D2iQ Kommander that installs Kibana OSS
+    digest: fd496d5a9abfd50a5e1578443696e81092a164538ea1a87dea972052537325c4
+    icon: https://helm.elastic.co/icons/kibana.png
+    maintainers:
+    - email: support@d2iq.com
+      name: Kommander Elastic OSS
+    name: kommander-kibana
+    sources:
+    - https://github.com/elastic/kibana
+    type: application
+    urls:
+    - https://kaiwalyajoshi.github.io/kommander-elasticsearch/kommander-kibana-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-01-27T18:33:53.656124089-08:00"
